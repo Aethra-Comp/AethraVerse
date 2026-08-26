@@ -93,7 +93,7 @@ const CoreMesh: React.FC = () => {
 
 const PortalCoreVisual: React.FC = () => {
   return (
-    <div style={{ width: '100%', height: '100%', minHeight: '260px' }}>
+    <div style={{ width: '100%', height: '100%' }}>
       <Canvas camera={{ position: [0, 0, 3.4], fov: 45 }}>
         <ambientLight intensity={1.5} color="#ffffff" />
         <pointLight position={[0, 3, 2]} intensity={2.0} color="#10B981" />
@@ -126,7 +126,7 @@ export const Register: React.FC = () => {
   const [formErrors, setFormErrors] = useState<Record<string, string>>({});
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 820);
+    const handleResize = () => setIsMobile(window.innerWidth < 992);
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);

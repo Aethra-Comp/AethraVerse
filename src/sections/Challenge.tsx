@@ -51,7 +51,7 @@ export const Challenge: React.FC = () => {
           {/* Vertical connecting line */}
           <div
             className="timeline-line"
-            style={{ display: 'block' }}
+            style={{ display: 'block', left: isMobile ? '28px' : '50%' }}
           />
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem', position: 'relative' }}>

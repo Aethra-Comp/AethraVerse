@@ -43,7 +43,7 @@ export const Rules: React.FC = () => {
         </motion.div>
 
         {/* Responsive Dual Column list layout */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '0' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '0' }}>
           {rulesList.map((rule, idx) => {
             const accentColor = ACCENT_COLORS[idx];
             return (
